@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KharchaDekho | Track. Predict. Save.</title>
+  <meta name="description" content="The ultimate AI-powered ecosystem to track your spending, predict future expenses, and achieve your savings goals.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container flex justify-between items-center header-container">
+      <a href="/" class="logo">
+        <svg width="40" height="32" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Wallet Body -->
+          <rect y="15" width="85" height="60" rx="12" fill="#0A2A5E" />
+          <!-- Wallet Flap/Button -->
+          <path d="M85 35H92C96.4183 35 100 38.5817 100 43V47C100 51.4183 96.4183 55 92 55H85V35Z" fill="#20407E" />
+          <circle cx="92" cy="45" r="3" fill="#FFFFFF" />
+          
+          <!-- Money/Cards sticking out top -->
+          <path d="M15 15L25 5H75L65 15H15Z" fill="#00D68F" opacity="0.9"/>
+          <path d="M10 20L20 10H70L60 20H10Z" fill="#00B272" opacity="0.9"/>
+          
+          <!-- Bar Chart inside wallet -->
+          <rect x="18" y="50" width="8" height="12" rx="2" fill="#FFFFFF" />
+          <rect x="32" y="42" width="8" height="20" rx="2" fill="#FFFFFF" />
+          <rect x="46" y="32" width="8" height="30" rx="2" fill="#FFFFFF" />
+          
+          <!-- Upward Arrow -->
+          <path d="M25 40C35 38 42 32 48 20L40 20L55 12L58 28L51 25C44 38 35 44 23 45L25 40Z" fill="#00D68F" />
+        </svg>
+        <span class="logo-text logo-text-dark">Kharcha<span class="logo-text-highlight">Dekho</span></span>
+      </a>
+      
+      <nav class="desktop-nav flex gap-8 items-center" id="nav-menu">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How it Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+      
+      <div class="flex items-center gap-4">
+        <a href="download.html" class="btn btn-primary hide-mobile">Download App</a>
+        <!-- Mobile Menu Icon -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero text-center">
+      <div class="glow-orb"></div>
+      
+      <div class="container relative z-10">
+        <div class="badge">
+          <span class="badge-icon">✦</span>
+          The Future of Personal Finance
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="text-gradient">Track. Predict. Save.</span>
+          <br />All with <span class="text-gradient-green">Artificial Intelligence.</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          KharchaDekho is the ultimate fintech ecosystem. We don't just track where your money went, we predict where it's going next.
+        </p>
+        
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="download.html" class="btn btn-primary">Download App</a>
+          <a href="#features" class="btn btn-outline">See Features</a>
+        </div>
+        
+        <!-- App Mockup Interactive Prototype -->
+        <div class="mockup-container interactive-prototype">
+          <iframe src="prototype.html" class="hero-prototype-iframe" title="Interactive App Prototype" scrolling="no"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Problem/Solution Grid Section -->
+    <section id="features" class="section text-center section-top-border">
+      <div class="container">
+        <h2 class="section-title">Why <span class="text-gradient-green">KharchaDekho?</span></h2>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper icon-bg-gray">💸</div>
+            <h3 class="feature-title">Stop Overspending</h3>
+            <p class="text-muted feature-desc">People lose up to 20% of their income to impulse buys. Our predictive alerts warn you before you break your budget.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper icon-bg-green">🎯</div>
+            <h3 class="feature-title">Crush Savings Goals</h3>
+            <p class="text-muted feature-desc">Whether it's an emergency fund or a new car, set a goal and let our AI calculate exactly how much to save daily.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper icon-bg-gray">🧠</div>
+            <h3 class="feature-title">Complete Awareness</h3>
+            <p class="text-muted feature-desc">Understand your spending habits with beautifully simple charts and AI-driven insights that make sense of the data.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section id="how-it-works" class="section text-center section-top-border">
+      <div class="container">
+        <h2 class="section-title">How It <span class="text-gradient-green">Works</span></h2>
+        
+        <div class="steps-container">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3 class="step-title">Connect Accounts</h3>
+            <p class="text-muted step-desc">Securely link your bank accounts and let KharchaDekho sync your transactions automatically.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3 class="step-title">Set Your Goals</h3>
+            <p class="text-muted step-desc">Tell us what you're saving for. The AI will instantly build a custom daily spending limit.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3 class="step-title">Stay on Track</h3>
+            <p class="text-muted step-desc">Receive predictive warnings and beautiful insights that keep you aligned with your financial goals.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section text-center section-top-border relative">
+      <div class="container relative z-10">
+        <h2 class="pricing-title">Simple, Transparent Pricing</h2>
+        <p class="text-muted pricing-desc">Invest in your financial future for less than the cost of a cup of coffee.</p>
+        
+        <div class="pricing-grid">
+          
+          <!-- Free Plan -->
+          <div class="pricing-card">
+            <h3 class="pricing-tier-title tier-basic">Basic</h3>
+            <p class="pricing-tier-desc">Perfect for getting started</p>
+            <div class="pricing-price">
+              ₹0<span class="pricing-mo">/mo</span>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature-item">
+                <span class="feature-bullet">✦</span> Basic Expense Tracking
+              </li>
+              <li class="pricing-feature-item">
+                <span class="feature-bullet">✦</span> 2 Savings Goals
+              </li>
+              <li class="pricing-feature-item">
+                <span class="feature-bullet">✦</span> Manual Entry
+              </li>
+            </ul>
+            <button class="btn btn-outline btn-full">Get Started Free</button>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="pricing-card premium">
+            <div class="pricing-popular-badge">Most Popular</div>
+            <h3 class="pricing-tier-title tier-premium">Premium</h3>
+            <p class="pricing-tier-desc">Unlock AI and Predictive power</p>
+            <div class="pricing-price">
+              ₹49<span class="pricing-mo">/mo</span>
+            </div>
+            <ul class="pricing-features">
+              <li class="pricing-feature-item">
+                <span class="feature-bullet-premium">✦</span> <strong style="color: var(--text-main)">AI Money Coach</strong>
+              </li>
+              <li class="pricing-feature-item">
+                <span class="feature-bullet-premium">✦</span> Predictive Warnings
+              </li>
+              <li class="pricing-feature-item">
+                <span class="feature-bullet-premium">✦</span> "Can I Afford This?" Assistant
+              </li>
+              <li class="pricing-feature-item">
+                <span class="feature-bullet-premium">✦</span> Unlimited Goals & Trends
+              </li>
+            </ul>
+            <button class="btn btn-secondary btn-full">Upgrade Now</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer relative overflow-hidden">
+    <div class="footer-glow"></div>
+    <div class="container flex flex-col items-center justify-center gap-6 text-center relative z-10">
+      
+      <a href="/" class="logo">
+        <svg width="40" height="32" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Wallet Body -->
+          <rect y="15" width="85" height="60" rx="12" fill="#0A2A5E" />
+          <!-- Wallet Flap/Button -->
+          <path d="M85 35H92C96.4183 35 100 38.5817 100 43V47C100 51.4183 96.4183 55 92 55H85V35Z" fill="#20407E" />
+          <circle cx="92" cy="45" r="3" fill="#FFFFFF" />
+          
+          <!-- Money/Cards sticking out top -->
+          <path d="M15 15L25 5H75L65 15H15Z" fill="#00D68F" opacity="0.9"/>
+          <path d="M10 20L20 10H70L60 20H10Z" fill="#00B272" opacity="0.9"/>
+          
+          <!-- Bar Chart inside wallet -->
+          <rect x="18" y="50" width="8" height="12" rx="2" fill="#FFFFFF" />
+          <rect x="32" y="42" width="8" height="20" rx="2" fill="#FFFFFF" />
+          <rect x="46" y="32" width="8" height="30" rx="2" fill="#FFFFFF" />
+          
+          <!-- Upward Arrow -->
+          <path d="M25 40C35 38 42 32 48 20L40 20L55 12L58 28L51 25C44 38 35 44 23 45L25 40Z" fill="#00D68F" />
+        </svg>
+        <span class="logo-text logo-text-dark">Kharcha<span class="logo-text-highlight">Dekho</span></span>
+      </a>
+
+      <p class="text-muted footer-desc">
+        Track. Predict. Save. The all-in-one financial ecosystem powered by artificial intelligence.
+      </p>
+      <div class="flex gap-6 footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+      <p class="copyright">© 2026 KharchaDekho. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

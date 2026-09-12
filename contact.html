@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | KharchaDekho</title>
+  <meta name="description" content="Get in touch with the KharchaDekho team.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="container flex justify-between items-center header-container">
+      <a href="index.html" class="logo">
+        <svg width="40" height="32" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Wallet Body -->
+          <rect y="15" width="85" height="60" rx="12" fill="#0A2A5E" />
+          <!-- Wallet Flap/Button -->
+          <path d="M85 35H92C96.4183 35 100 38.5817 100 43V47C100 51.4183 96.4183 55 92 55H85V35Z" fill="#20407E" />
+          <circle cx="92" cy="45" r="3" fill="#FFFFFF" />
+          
+          <!-- Money/Cards sticking out top -->
+          <path d="M15 15L25 5H75L65 15H15Z" fill="#00D68F" opacity="0.9"/>
+          <path d="M10 20L20 10H70L60 20H10Z" fill="#00B272" opacity="0.9"/>
+          
+          <!-- Bar Chart inside wallet -->
+          <rect x="18" y="50" width="8" height="12" rx="2" fill="#FFFFFF" />
+          <rect x="32" y="42" width="8" height="20" rx="2" fill="#FFFFFF" />
+          <rect x="46" y="32" width="8" height="30" rx="2" fill="#FFFFFF" />
+          
+          <!-- Upward Arrow -->
+          <path d="M25 40C35 38 42 32 48 20L40 20L55 12L58 28L51 25C44 38 35 44 23 45L25 40Z" fill="#00D68F" />
+        </svg>
+        <span class="logo-text logo-text-dark">Kharcha<span class="logo-text-highlight">Dekho</span></span>
+      </a>
+      
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav flex gap-8 items-center" id="nav-menu">
+        <a href="index.html#features" class="nav-link">Features</a>
+        <a href="index.html#how-it-works" class="nav-link">How it Works</a>
+        <a href="index.html#pricing" class="nav-link">Pricing</a>
+      </nav>
+      
+      <div class="flex items-center gap-4">
+        <a href="download.html" class="btn btn-primary hide-mobile">Download App</a>
+        <!-- Mobile Menu Icon -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section text-center" style="padding-top: 150px; min-height: 80vh;">
+      <div class="container contact-container">
+        <div class="badge">
+          <span class="badge-icon">✉️</span>
+          We'd love to hear from you
+        </div>
+        <h1 class="section-title" style="margin-bottom: 1rem;">Contact <span class="text-gradient-green">Us</span></h1>
+        
+        <p class="text-muted" style="margin-bottom: 3rem; font-size: 1.15rem;">
+          Have questions or need support? Fill out the form below or email us directly at 
+          <a href="mailto:kharchadekho6@gmail.com" style="color: var(--primary); font-weight: 600; text-decoration: underline; text-decoration-color: var(--secondary); text-underline-offset: 4px;">kharchadekho6@gmail.com</a>
+        </p>
+        
+        <div class="feature-card" style="padding: 3rem; text-align: left; max-width: 100%;">
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-control" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-secondary btn-full" style="margin-top: 1rem; border: none; font-size: 1.1rem;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer relative overflow-hidden">
+    <div class="container flex flex-col items-center justify-center gap-6 text-center relative z-10">
+      
+      <a href="index.html" class="logo">
+        <svg width="40" height="32" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Wallet Body -->
+          <rect y="15" width="85" height="60" rx="12" fill="#0A2A5E" />
+          <!-- Wallet Flap/Button -->
+          <path d="M85 35H92C96.4183 35 100 38.5817 100 43V47C100 51.4183 96.4183 55 92 55H85V35Z" fill="#20407E" />
+          <circle cx="92" cy="45" r="3" fill="#FFFFFF" />
+          
+          <!-- Money/Cards sticking out top -->
+          <path d="M15 15L25 5H75L65 15H15Z" fill="#00D68F" opacity="0.9"/>
+          <path d="M10 20L20 10H70L60 20H10Z" fill="#00B272" opacity="0.9"/>
+          
+          <!-- Bar Chart inside wallet -->
+          <rect x="18" y="50" width="8" height="12" rx="2" fill="#FFFFFF" />
+          <rect x="32" y="42" width="8" height="20" rx="2" fill="#FFFFFF" />
+          <rect x="46" y="32" width="8" height="30" rx="2" fill="#FFFFFF" />
+          
+          <!-- Upward Arrow -->
+          <path d="M25 40C35 38 42 32 48 20L40 20L55 12L58 28L51 25C44 38 35 44 23 45L25 40Z" fill="#00D68F" />
+        </svg>
+        <span class="logo-text logo-text-dark">Kharcha<span class="logo-text-highlight">Dekho</span></span>
+      </a>
+
+      <p class="text-muted footer-desc">
+        Track. Predict. Save. The all-in-one financial ecosystem powered by artificial intelligence.
+      </p>
+      <div class="flex gap-6 footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </div>
+      <p class="copyright">© 2026 KharchaDekho. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
