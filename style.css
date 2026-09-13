@@ -22,13 +22,14 @@
   padding: 0;
 }
 
-body {
+body, html {
   font-family: var(--font-inter);
   background-color: var(--bg-main);
   color: var(--text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -532,19 +533,30 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 480px) {
-  h1 { font-size: 1.8rem; line-height: 1.2; margin-bottom: 0.5rem; }
-  h2 { font-size: 1.5rem; }
+  h1 { font-size: clamp(2.2rem, 8vw, 2.8rem); line-height: 1.2; margin-bottom: 0.5rem; }
+  h2 { font-size: 1.8rem; }
   .hero-subtitle { font-size: 1rem; margin-bottom: 2rem; }
   
-  .container { padding: 0 1rem; }
-  .hero { padding-top: 80px; min-height: auto; padding-bottom: 2rem; }
+  .container { padding: 0 1.25rem; }
+  .hero { padding-top: 100px; min-height: auto; padding-bottom: 3rem; }
   
-  .interactive-prototype {
-    height: 750px;
-    min-height: unset;
-    transform: scale(0.75);
-    transform-origin: top center;
-    margin-bottom: -150px;
+  .hero .flex.justify-center.gap-4 {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .btn { padding: 1rem 1.5rem; width: 100%; max-width: 300px; border-radius: 100px; }
+
+  .mockup-container.interactive-prototype {
+    width: 100%;
+    max-width: 350px;
+    height: 75vh;
+    min-height: 550px;
+    max-height: 700px;
+    margin: 2rem auto 0;
+    transform: none;
   }
 
   .features-grid, .showcase-grid {
@@ -559,10 +571,8 @@ a { text-decoration: none; color: inherit; }
     min-width: 100%;
   }
 
-  .btn { padding: 0.8rem 1.5rem; width: 100%; }
-
   .pricing-card {
-    padding: 2rem 1.5rem;
+    padding: 2.5rem 1.5rem;
     min-width: 100%;
   }
   
