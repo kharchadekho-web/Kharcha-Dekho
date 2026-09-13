@@ -532,13 +532,34 @@ a { text-decoration: none; color: inherit; }
 }
 
 @media (max-width: 480px) {
-  h1 { font-size: 2rem; }
-  .btn { padding: 0.8rem 1.5rem; width: 100%; }
+  h1 { font-size: 1.8rem; line-height: 1.2; margin-bottom: 0.5rem; }
+  h2 { font-size: 1.5rem; }
+  .hero-subtitle { font-size: 1rem; margin-bottom: 2rem; }
+  
+  .container { padding: 0 1rem; }
+  .hero { padding-top: 80px; min-height: auto; padding-bottom: 2rem; }
   
   .interactive-prototype {
-    height: 70vh;
-    min-height: 500px;
+    height: 750px;
+    min-height: unset;
+    transform: scale(0.75);
+    transform-origin: top center;
+    margin-bottom: -150px;
   }
+
+  .features-grid, .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .steps-container {
+    flex-direction: column;
+  }
+
+  .step-card {
+    min-width: 100%;
+  }
+
+  .btn { padding: 0.8rem 1.5rem; width: 100%; }
 
   .pricing-card {
     padding: 2rem 1.5rem;
