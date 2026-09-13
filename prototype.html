@@ -6,12 +6,15 @@
 <title>KharchaDekho — Prototype</title>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <style>
-*{box-sizing:border-box} body{margin:0;background:transparent;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;color:#171722;display:flex;justify-content:center;align-items:center;min-height:100vh;}
-.phone{width:390px;max-width:100%;height:800px;margin:auto;background:#fafafd;border-radius:44px;box-shadow:0 25px 80px rgba(0,0,0,0.1);overflow:hidden;border:12px solid #171722;position:relative;}
-.status{height:30px;padding:8px 18px 0;font-size:12px;display:flex;justify-content:space-between;position:relative;z-index:10;}
-.app{padding:14px 18px 90px;height:100%;overflow-y:auto;scrollbar-width:none;}
-.app::-webkit-scrollbar{display:none;}
-h1{font-size:25px;margin:8px 0 4px}.muted{color:#777787;font-size:13px}.card{background:white;border:1px solid #ececf2;border-radius:20px;padding:17px;margin:14px 0;box-shadow:0 5px 18px #00000008}
+* { box-sizing: border-box; }
+body { margin: 0; background: transparent; font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif; color: #171722; display: flex; justify-content: center; align-items: center; height: 100vh; overflow: hidden; }
+.phone { width: 100%; max-width: 390px; height: 100%; max-height: 800px; margin: auto; background: #fafafd; border-radius: 40px; box-shadow: 0 25px 80px rgba(0,0,0,0.1); overflow: hidden; border: 10px solid #171722; position: relative; display: flex; flex-direction: column; }
+.status { height: 30px; padding: 8px 18px 0; font-size: 12px; display: flex; justify-content: space-between; position: relative; z-index: 10; flex-shrink: 0; }
+.app { padding: 14px 18px 90px; height: 100%; overflow-y: auto; scrollbar-width: none; flex-grow: 1; }
+.app::-webkit-scrollbar { display: none; }
+h1 { font-size: 25px; margin: 8px 0 4px; }
+.muted { color: #777787; font-size: 13px; }
+.card { background: white; border: 1px solid #ececf2; border-radius: 20px; padding: 17px; margin: 14px 0; box-shadow: 0 5px 18px #00000008; }
 .balance{font-size:36px;font-weight:800;margin:8px 0}.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.pill{background:#eeeafa;padding:7px 11px;border-radius:99px;font-size:12px;font-weight:700}.good{background:#e8f7ef;color:#18794e}.warn{background:#fff4dd;color:#9a6500}.bad{background:#ffe9e9;color:#a43b3b}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.mini{padding:13px;background:#f7f7fb;border-radius:15px}.amount{font-weight:800;font-size:17px;margin-top:5px}
 .nav{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);width:350px;max-width:92%;background:#191923;color:white;border-radius:23px;padding:11px;display:flex;justify-content:space-around;z-index:5}.nav button{border:0;background:none;color:#aaa;font-size:11px;cursor:pointer;}.nav button.active{color:white;font-weight:800}.nav span{display:block;font-size:19px;margin-bottom:2px}
